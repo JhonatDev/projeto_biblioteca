@@ -50,3 +50,10 @@ tr{
     margin: 2vw;
     text-align: center;
 }
+body {
+    background-image: url('image.png');
+    background-size: cover; /* para cobrir toda a página */
+    height: 100vh; /* altura igual à altura da janela de visualização (viewport height) */
+    margin: 0;
+    padding: 0;
+}
