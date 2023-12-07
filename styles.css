@@ -1,5 +1,25 @@
-*{
+* {
     font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('image.png');
+    background-size: cover;
+    height: 100vh;
+}
+
+h1, h2 {
+    background-color: transparent;
+    transition: background-color 0.3s ease-in-out;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+h1:hover, h2:hover {
+    background-color: #c8c4c4; /* Altere para a cor desejada ao passar o mouse */
 }
 
 .listarAcervo {
@@ -8,7 +28,7 @@
     width: 100%;
 }
 
-#listar{
+#listar {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -16,30 +36,30 @@
     background-color: #f2f2f2;
 }
 
-.inform{
+.inform {
     word-wrap: break-word;
     width: 16%;
     text-align: center;
 }
 
-.cabeçalho{
+.cabeçalho {
     display: flex;
     flex-direction: row;
     align-items: center;
     width: 100%;
     background-color: #c8c4c4;
-    border:1px solid black;
+    border: 1px solid black;
     margin: 0.1vw;
     font-weight: bold;
 }
 
-tr{
+tr {
     display: flex;
     flex-direction: row;
     align-items: center;
     width: 100%;
     background-color: #f2f2f2;
-    border:1px solid black;
+    border: 1px solid black;
     margin: 0.1vw;
 }
 
@@ -50,10 +70,75 @@ tr{
     margin: 2vw;
     text-align: center;
 }
-body {
-    background-image: url('image.png');
-    background-size: cover; /* para cobrir toda a página */
-    height: 100vh; /* altura igual à altura da janela de visualização (viewport height) */
-    margin: 0;
-    padding: 0;
+
+/* Adiciona uma classe 'input-container' para agrupar labels e inputs */
+.input-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
 }
+
+label {
+    margin-bottom: 5px;
+}
+
+input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+/* Estilo para os botões */
+button {
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 3px;
+}
+
+#listar {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 10vh;
+    background-color: #f2f2f2;
+}
+
+.inform {
+    word-wrap: break-word;
+    width: 16%;
+    text-align: center;
+}
+
+.cabeçalho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    background-color: #c8c4c4;
+    border: 1px solid black;
+    margin: 0.1vw;
+    font-weight: bold;
+}
+
+tr {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    background-color: #f2f2f2;
+    border: 1px solid black;
+    margin: 0.1vw;
+}
+
+#mensagem {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    margin: 2vw;
+    text-align: center;
+}
+
