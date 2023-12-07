@@ -11,6 +11,7 @@
   <h1>Biblioteca</h1>
 
   <h2>Cadastrar Livro</h2>
+  <div class="input-container">
   <label for="livroTitulo">Título:</label>
   <input type="text" id="livroTitulo" required>
   <label for="livroAutor">Autor:</label>
@@ -22,27 +23,33 @@
   <label for="livroGenero">Gênero:</label>
   <input type="text" id="livroGenero" required>
   <button type="button" onclick="cadastrarLivro()">Cadastrar Livro</button>
+  </div>
 
   <h2>Cadastrar Usuário</h2>
+  <div class="input-container">
   <label for="usuarioNome">Nome:</label>
   <input type="text" id="usuarioNome" required>
   <label for="usuarioRegistro">Registro Acadêmico:</label>
   <input type="text" id="usuarioRegistro" required>
   <label for="usuarioDataNascimento">Data de Nascimento :</label>
   <input type="date" id="usuarioDataNascimento" required>
-  <button type="button" onclick="cadastrarUsuario()">Cadastrar Usuário</button>
+  <button type="button" onclick="cadastrarUsuario()">Cadastrar Usuário</button></div>
 
   <h2>Emprestar Item</h2>
+  <div class="input-container">
+
   <label for="itemCodigo">Código do Item:</label>
   <input type="text" id="itemCodigo" required>
   <label for="usuarioRegistroEmprestimo">Registro Acadêmico do Usuário:</label>
   <input type="text" id="usuarioRegistroEmprestimo" required>
-  <button type="button" onclick="emprestarItem()">Emprestar Item</button>
+  <button type="button" onclick="emprestarItem()">Emprestar Item</button> </div>
 
   <h2>Devolver Item</h2>
+  <div class="input-container">
+
   <label for="itemCodigoDevolucao">Código do Item para Devolução:</label>
   <input type="text" id="itemCodigoDevolucao" required>
-  <button type="button" onclick="devolverItem()">Devolver Item</button>
+  <button type="button" onclick="devolverItem()">Devolver Item</button> </div>
 
   <div class="listarAcervo">
     <h1>Acervo</h1>
